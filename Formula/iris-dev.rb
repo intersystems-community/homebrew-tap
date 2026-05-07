@@ -7,18 +7,18 @@ class IrisDev < Formula
   on_macos do
     on_arm do
       url "https://github.com/intersystems-community/iris-dev/releases/download/v#{version}/iris-dev-macos-arm64"
-      sha256 "PLACEHOLDER_ARM64"
+      sha256 "a9e95e8820a1874781386edf9daf8880cb7d883e1d2ede11deb5c101c7e7a11d"
     end
     on_intel do
       url "https://github.com/intersystems-community/iris-dev/releases/download/v#{version}/iris-dev-macos-x86_64"
-      sha256 "PLACEHOLDER_X86_64"
+      sha256 "e62809b66db446d1fd1b147d48d22342e5859169a0ca140317d2989e51c86569"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/intersystems-community/iris-dev/releases/download/v#{version}/iris-dev-linux-x86_64"
-      sha256 "PLACEHOLDER_LINUX_X86_64"
+      sha256 "737634f88ea317032a7ad3e68342c2a4219e28370bd38ef32d5e2cdff6e86400"
     end
   end
 
