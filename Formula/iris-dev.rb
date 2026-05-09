@@ -6,18 +6,18 @@ class IrisDev < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/intersystems-community/iris-dev/releases/download/v#{VERSION}/iris-dev-macos-arm64"
+      url "https://github.com/intersystems-community/iris-dev/releases/download/v#{version}/iris-dev-macos-arm64"
       sha256 "2cd1a2e763a533bcd71e9e4dc281b4529219b533a2fdb9878662aa25ca1e68e2"
     end
     on_intel do
-      url "https://github.com/intersystems-community/iris-dev/releases/download/v#{VERSION}/iris-dev-macos-x86_64"
+      url "https://github.com/intersystems-community/iris-dev/releases/download/v#{version}/iris-dev-macos-x86_64"
       sha256 "083510888e48b77c96fbe79255d6149a6587cabbf2d8cfda386bf6b87d206097"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/intersystems-community/iris-dev/releases/download/v#{VERSION}/iris-dev-linux-x86_64"
+      url "https://github.com/intersystems-community/iris-dev/releases/download/v#{version}/iris-dev-linux-x86_64"
       sha256 "f041fe3970ca7e9795623974cc7e36f1b30aac619c14417841442efc723bd137"
     end
   end
