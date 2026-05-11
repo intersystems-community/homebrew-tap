@@ -1,24 +1,24 @@
 class IrisDev < Formula
   desc "MCP server connecting AI assistants to InterSystems IRIS — compile, test, debug ObjectScript without leaving the chat"
   homepage "https://github.com/intersystems-community/iris-dev"
-  version "0.4.14"
+  version "0.4.15"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/intersystems-community/iris-dev/releases/download/v#{version}/iris-dev-macos-arm64"
-      sha256 "2cd1a2e763a533bcd71e9e4dc281b4529219b533a2fdb9878662aa25ca1e68e2"
+      url "https://github.com/intersystems-community/iris-dev/releases/download/v0.4.15/iris-dev-macos-arm64"
+      sha256 "1bac214e9b5fab2381bd4e9e567daa2d8fcd18a2b30fee0c044ae318c4bf2bdb"
     end
     on_intel do
-      url "https://github.com/intersystems-community/iris-dev/releases/download/v#{version}/iris-dev-macos-x86_64"
-      sha256 "083510888e48b77c96fbe79255d6149a6587cabbf2d8cfda386bf6b87d206097"
+      url "https://github.com/intersystems-community/iris-dev/releases/download/v0.4.15/iris-dev-macos-x86_64"
+      sha256 "e46129d614d17e118763292ef57a6aca7bb2da550895ba63809440d92e6e0672"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/intersystems-community/iris-dev/releases/download/v#{version}/iris-dev-linux-x86_64"
-      sha256 "f041fe3970ca7e9795623974cc7e36f1b30aac619c14417841442efc723bd137"
+      url "https://github.com/intersystems-community/iris-dev/releases/download/v0.4.15/iris-dev-linux-x86_64"
+      sha256 "5cd85a3c485ac825e6df0a19037acb509a0ed10aa8f455fd249568911be7c391"
     end
   end
 
@@ -29,18 +29,7 @@ class IrisDev < Formula
     bin.install bin_name => "iris-dev"
   end
 
-  def caveats
-    <<~EOS
-      Quick start (no docker required):
-        export IRIS_HOST=localhost
-        export IRIS_WEB_PORT=52773
-        iris-dev mcp
-
-      Full setup: https://github.com/intersystems-community/iris-dev#readme
-    EOS
-  end
-
   test do
-    assert_match "iris-dev 0.4.14", shell_output("#{bin}/iris-dev --version")
+    assert_match "iris-dev 0.4.15", shell_output("#{bin}/iris-dev --version")
   end
 end
