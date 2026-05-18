@@ -1,24 +1,24 @@
 class IrisDev < Formula
   desc "MCP server connecting AI assistants to InterSystems IRIS — compile, test, debug ObjectScript without leaving the chat"
   homepage "https://github.com/intersystems-community/iris-dev"
-  version "0.4.26"
+  version "0.4.27"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/intersystems-community/iris-dev/releases/download/v0.4.26/iris-dev-macos-arm64"
-      sha256 "07b532446549e58c718d2e1de3d06ef77023d8b09ac02efb9778c7f943b0e762"
+      url "https://github.com/intersystems-community/iris-dev/releases/download/v0.4.27/iris-dev-macos-arm64"
+      sha256 "ebbb14e73dd320ed310dab0d535d5244bfdde3568d80b6cce0bf33ac146e22c3"
     end
     on_intel do
-      url "https://github.com/intersystems-community/iris-dev/releases/download/v0.4.26/iris-dev-macos-x86_64"
-      sha256 "c28d6d3119e1898721813dec2ea9f136171a9d1b6d8c3f9e6522ca196635349c"
+      url "https://github.com/intersystems-community/iris-dev/releases/download/v0.4.27/iris-dev-macos-x86_64"
+      sha256 "f6fa6d42c431ab63cab01f16dd4360973d84cdb5681610f03bd56b169bcabfc6"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/intersystems-community/iris-dev/releases/download/v0.4.26/iris-dev-linux-x86_64"
-      sha256 "ddc1a7155ba017b851a850930246302387d054650c02392163e798abdbeef4dc"
+      url "https://github.com/intersystems-community/iris-dev/releases/download/v0.4.27/iris-dev-linux-x86_64"
+      sha256 "de8a0f2dfa874d34ff7789e6adf178fef134caf8647263b520340e5d4cd787e3"
     end
   end
 
@@ -30,6 +30,6 @@ class IrisDev < Formula
   end
 
   test do
-    assert_match "iris-dev 0.4.26", shell_output("#{bin}/iris-dev --version")
+    assert_match "iris-dev 0.4.27", shell_output("#{bin}/iris-dev --version")
   end
 end
