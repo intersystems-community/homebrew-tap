@@ -11,7 +11,7 @@ class IrisAgenticDev < Formula
     end
     on_intel do
       url "https://github.com/intersystems-community/iris-agentic-dev/releases/download/v0.9.5/iris-agentic-dev-macos-x86_64"
-      sha256 "5a12a8dd9b751fe6b6c801c35f37621c80d77eadb2b0bd9fb66fd39cbbc25b7f"
+      sha256 "b025ca5fb7680d3c2588e1b9860fb6a3918f8b9e2d7379146395be1167128e3d"
     end
   end
 
