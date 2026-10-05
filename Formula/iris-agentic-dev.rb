@@ -1,28 +1,28 @@
 class IrisAgenticDev < Formula
   desc "MCP server connecting AI assistants to InterSystems IRIS — compile, test, debug ObjectScript without leaving the chat"
   homepage "https://github.com/intersystems-community/iris-agentic-dev"
-  version "1.4.2"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/intersystems-community/iris-agentic-dev/releases/download/v1.4.2/iris-agentic-dev-macos-arm64"
-      sha256 "7c2bbdad1e224c29977956adecf57ce263d1fe6b7005002ef6ec4702d22a3d7f"
+      url "https://github.com/intersystems-community/iris-agentic-dev/releases/download/v1.5.0/iris-agentic-dev-macos-arm64"
+      sha256 "cfae461e715945bdc0d3f6462ec1795c88f31a161573cca2c5872cda08c050d9"
     end
     on_intel do
-      url "https://github.com/intersystems-community/iris-agentic-dev/releases/download/v1.4.2/iris-agentic-dev-macos-x86_64"
-      sha256 "d378c234d863d8234ea7d1f00f9614ddd3f100903c0a577ede5157dcb50e2593"
+      url "https://github.com/intersystems-community/iris-agentic-dev/releases/download/v1.5.0/iris-agentic-dev-macos-x86_64"
+      sha256 "b9f54111852bc969652b6ace2cbbbc90020e6c4646d9034c8d86ff70256aef59"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/intersystems-community/iris-agentic-dev/releases/download/v1.4.2/iris-agentic-dev-linux-aarch64"
-      sha256 "675f4c0716dba92cce1118dd720770ffb35110e95666411076ffd6250d1b3d7f"
+      url "https://github.com/intersystems-community/iris-agentic-dev/releases/download/v1.5.0/iris-agentic-dev-linux-aarch64"
+      sha256 "3698ebc2baccec1bf852a2ce7fcf3ac312fcefbcf2525df49a8839919ad068c1"
     end
     on_intel do
-      url "https://github.com/intersystems-community/iris-agentic-dev/releases/download/v1.4.2/iris-agentic-dev-linux-x86_64"
-      sha256 "4742bfc92239bd68bcd8b5c63ccde3cc125ae2bc901d527d14c3df04bfbc3803"
+      url "https://github.com/intersystems-community/iris-agentic-dev/releases/download/v1.5.0/iris-agentic-dev-linux-x86_64"
+      sha256 "a9660b4bf0a74498c7dcd6a371b7c1900e4ad8be237cd8f9187a4f406a83dcee"
     end
   end
 
