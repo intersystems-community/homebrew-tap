@@ -1,22 +1,22 @@
 class Ascot < Formula
   desc "Type checker and code intelligence engine for InterSystems ObjectScript"
   homepage "https://github.com/intersystems-community/ascot"
-  version "0.4.2"
+  version "0.4.3"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
-    url "https://github.com/intersystems-community/ascot/releases/download/v0.4.2/ascot-cli-universal-apple-darwin.tar.gz"
-    sha256 "e7d5d01586cc6ff786c8f1be8de582a4201a6f4cdd8351087e175e49f21d52ec"
+    url "https://github.com/intersystems-community/ascot/releases/download/v0.4.3/ascot-cli-universal-apple-darwin.tar.gz"
+    sha256 "ef023746622bee6dcfdb8457a2a6cb89514fa0746399a3ab474e8de3d11956ac"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/intersystems-community/ascot/releases/download/v0.4.2/ascot-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "111d6e17b620c62d31ce525b5ec108c9dcacef516f8a9ecb9c0d926600a9e995"
+      url "https://github.com/intersystems-community/ascot/releases/download/v0.4.3/ascot-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0eb09ac321d6cca4d58431ce7a2085a75f41fb9bc51651224306b7776938165d"
     end
     on_arm do
-      url "https://github.com/intersystems-community/ascot/releases/download/v0.4.2/ascot-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "671669a54b4f36a2c9a221c81f5408a211ce1a6b50eda23ea9b59c1f60b5e714"
+      url "https://github.com/intersystems-community/ascot/releases/download/v0.4.3/ascot-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4f21a8698ac27802f1f160545121c5c35a26d9aa0e7fd0358098a98c2f19305a"
     end
   end
 
@@ -25,6 +25,6 @@ class Ascot < Formula
   end
 
   test do
-    assert_match "ascot 0.4.2", shell_output("#{bin}/ascot --version")
+    assert_match "ascot 0.4.3", shell_output("#{bin}/ascot --version")
   end
 end
